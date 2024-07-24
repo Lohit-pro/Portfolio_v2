@@ -30,7 +30,7 @@ function SmNavbar() {
           className={`${
             activeTab === "/" ? "text-secondary dark:text-secondary" : ""
           } dark:text-light text-dark transition-all duration-300`}
-          size={30}
+          size={20}
         />
         Home
       </Link>
@@ -44,7 +44,7 @@ function SmNavbar() {
           className={`${
             activeTab === "/skills" ? "text-secondary dark:text-secondary" : ""
           } dark:text-light text-dark transition-all duration-300`}
-          size={30}
+          size={20}
         />
         Skills
       </Link>
@@ -60,7 +60,7 @@ function SmNavbar() {
               ? "text-secondary dark:text-secondary"
               : ""
           } dark:text-light text-dark transition-all duration-300`}
-          size={30}
+          size={20}
         />
         Projects
       </Link>
@@ -76,7 +76,7 @@ function SmNavbar() {
               ? "text-secondary dark:text-secondary"
               : ""
           } dark:text-light text-dark transition-all duration-300`}
-          size={30}
+          size={20}
         />
         Experience
       </Link>
@@ -90,7 +90,7 @@ function SmNavbar() {
           className={`${
             activeTab === "/contact" ? "text-secondary dark:text-secondary" : ""
           } dark:text-light text-dark transition-all duration-300`}
-          size={30}
+          size={20}
         />
         Contact
       </Link>
