@@ -32,11 +32,11 @@ function Experience() {
         Discord server moderation, showcasing my versatility. My diverse
         experiences reflect my ability to adapt and excel in various roles😃
       </div>
-      <div className="experiences italic flex my-2 md:mb-10 flex-col items-center w-full dark:text-light text-dark transition-all duration-1000 leading-snug">
+      <div className="experiences italic flex my-2 md:mb-10 flex-col items-center w-full leading-snug">
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className="experience w-[85%] md:w-[40%] my-4 flex flex-col"
+            className="experience border-2 border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300"
           >
             <span className="flex justify-between items-center">
               <div className="role text-secondary text-xl md:text-3xl leading-tight">
@@ -46,7 +46,7 @@ function Experience() {
                 {experience.mode}
               </div>
             </span>
-            <div className="company flex md:text-xl justify-start items-center">
+            <div className="company flex md:text-xl justify-start items-center dark:text-light text-dark transition-all duration-1000">
               <Image
                 className="w-[1.25rem] h-[1.25rem]"
                 src={experience.logo}
@@ -56,8 +56,8 @@ function Experience() {
               />
               &nbsp;{experience.company}
             </div>
-            <div className="description text-xs">{experience.description}</div>
-            <div className="skills w-full gap-2 mt-1 text-xl flex">
+            <div className="description text-xs dark:text-light text-dark transition-all duration-1000">{experience.description}</div>
+            <div className="skills w-full gap-2 mt-1 text-xl flex dark:text-light text-dark transition-all duration-1000">
               {experience.skills.map((skill, index) => (
                 <React.Fragment key={index}>{skillIcons[skill]}</React.Fragment>
               ))}
