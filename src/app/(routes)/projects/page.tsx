@@ -11,7 +11,7 @@ function Projects() {
     <div className="w-full min-h-screen flex dark:bg-dark bg-light transition-all duration-300 flex-col items-center justify-center pb-16">
       <Navbar navText={"Projects"} />
       <div className="skills_text w-full flex justify-center items-center dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center">
-        Here you'll find a collection of work from my freelance career, college
+        Here you&apos;ll find a collection of work from my freelance career, college
         projects, and some personal fun endeavors. These projects showcase my
         ability to apply my skills in real-world scenarios and my passion for
         coding. I love exploring new technologies and creating innovative
@@ -38,7 +38,7 @@ function Projects() {
         </div>
       </div>
       <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
-        Hold on✋, I'll add few more soon
+        Hold on✋, I&apos;ll add few more soon
       </div>
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
