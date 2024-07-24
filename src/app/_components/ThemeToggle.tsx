@@ -1,33 +1,34 @@
 "use client";
 
-import { Moon, Sun } from 'lucide-react';
-import React, { useEffect, useState } from 'react'
+import { Moon, Sun } from "lucide-react";
+import React, { useEffect, useState } from "react";
 
 function ThemeToggle() {
-    const [darkMode, setDarkmode] = useState(true)
+  const [darkMode, setDarkmode] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark";
+    }
+    return true; // default 
+  });
 
-    useEffect(() => {
-        const theme = localStorage.getItem("theme")
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
-        if(theme === "dark") setDarkmode(true)
-    }, [])
-
-    useEffect(() => {
-        if(darkMode) {
-            document.documentElement.classList.add("dark")
-            localStorage.setItem("theme", "dark")
-        } else {
-            document.documentElement.classList.remove("dark")
-            localStorage.setItem("theme", "light")
-        }
-    }, [darkMode])
   return (
-    <div className='w-10 dark:text-[#fffdd0] text-[#293245] hover:cursor-pointer' onClick={() => setDarkmode(!darkMode)}>
-        {
-            darkMode === true ? <Sun size={26} /> : <Moon size={26} />
-        }
+    <div
+      className="w-10 h-10 dark:text-light text-dark hover:cursor-pointer transition-all duration-300 flex items-center justify-center"
+      onClick={() => setDarkmode(!darkMode)}
+    >
+      {darkMode ? <Sun size={26} /> : <Moon size={26} />}
     </div>
-  )
+  );
 }
 
-export default ThemeToggle
+export default ThemeToggle;
