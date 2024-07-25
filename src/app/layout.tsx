@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Kanit } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-
-const kanit = Kanit({
-  subsets: ["latin"],
-  weight: ["500", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Lohit | Portfolio",
@@ -19,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kanit.className}>{children}</body>
+      <body className={GeistSans.className}>{children}</body>
     </html>
   );
 }
