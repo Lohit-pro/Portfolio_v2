@@ -15,7 +15,7 @@ function HeroSection() {
         height={100}
       />
       <div className="flex flex-col w-[90%] my-4 md:w-[60%] md:mt-10 md:text-xl md:pr-[15%] md:leading-loose leading-relaxed text-center md:text-start text-dark dark:text-light transition-all duration-1000">
-        <span className="text-secondary text-[3rem] md:text-[4rem]">
+        <span className="text-secondary text-[3rem] md:text-[4rem] font-semibold">
           Hey, I&apos;m Lohit
         </span>
         <div>
