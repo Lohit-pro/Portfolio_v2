@@ -10,7 +10,7 @@ function Projects() {
   return (
     <div className="w-full min-h-screen flex dark:bg-dark bg-light transition-all duration-300 flex-col items-center justify-center pb-16">
       <Navbar navText={"Projects"} />
-      <div className="skills_text w-full flex justify-center items-center dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center">
+      <div className="skills_text w-full flex justify-center items-center dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center slide-in-from-top">
         Here you&apos;ll find a collection of work from my freelance career, college
         projects, and some personal fun endeavors. These projects showcase my
         ability to apply my skills in real-world scenarios and my passion for
@@ -18,11 +18,11 @@ function Projects() {
         solutions for various challenges. Coding for fun keeps my skills sharp
         and my creativity flowing!
       </div>
-      <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
+      <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl slide-in-from-bottom">
         Here you go! Take a look 👀
       </div>
       <div className="flex flex-col w-full justify-center items-center">
-        <div className="w-[80%] my-5 md:my-10 md:gap-10 flex flex-col md:flex-row justify-evenly flex-wrap">
+        <div className="w-[80%] my-5 md:my-10 md:gap-10 flex flex-col md:flex-row justify-evenly flex-wrap slide-in-from-bottom">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

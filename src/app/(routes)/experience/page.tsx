@@ -25,7 +25,7 @@ function Experience() {
   return (
     <div className="w-full min-h-screen flex dark:bg-dark bg-light transition-all duration-300 flex-col items-center justify-center pb-16">
       <Navbar navText={"Experience"} />
-      <div className="skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center">
+      <div className="skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center slide-in-from-top">
         I have gained hands-on experience in the technical field through my
         current internship and various freelance projects completed during
         college. Beyond my technical skills, I have also been involved in
@@ -36,7 +36,7 @@ function Experience() {
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className="experience border-2 border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300"
+            className={`experience border-[3px] border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${index % 2 === 0 ? "slide-in-from-left" : "slide-in-from-right"}`}
           >
             <span className="flex justify-between items-center">
               <div className="role text-secondary md:text-3xl leading-tight">
