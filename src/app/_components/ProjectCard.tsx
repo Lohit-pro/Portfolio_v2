@@ -67,7 +67,7 @@ function ProjectCard({
   return (
     <Link
       href={url || "#"}
-      className="w-full relative md:w-[30%] flex flex-col justify-between items-center my-4 py-4 transition-all duration-300 border-[3px] border-secondary rounded-lg hover:border-dark hover:dark:border-light hover:cursor-pointer"
+      className="w-full relative md:w-[30%] flex flex-col justify-between items-center my-4 py-4 transition-all duration-300 border-[3px] border-secondary rounded-lg hover:border-dark hover:dark:border-light hover:cursor-pointer slide-in-from-bottom"
     >
       {videoUrl ? (
         <video className="projects_video w-[90%] rounded-lg" controls>

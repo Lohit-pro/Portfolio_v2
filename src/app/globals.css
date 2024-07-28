@@ -19,6 +19,75 @@
   background-color: #A91D3A;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-from-left {
+  animation: slideInFromLeft 0.4s ease-out;
+}
+
+.slide-in-from-right {
+  animation: slideInFromRight 0.4s ease-out;
+}
+
+.slide-in-from-bottom {
+  animation: slideInFromBottom 0.4s ease-out;
+}
+
+.slide-in-from-top {
+  animation: slideInFromTop 0.4s ease-out;
+}
+
+@media (min-width: 768px) {
+  .md\:slide-in-from-right {
+    animation: slideInFromRight 0.7s ease-out;
+  }
+
+  .md\:slide-in-from-bottom {
+    animation: slideInFromBottom 0.7s ease-out;
+  }
+}
 
 .nav-link {
   position: relative;

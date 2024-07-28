@@ -32,14 +32,14 @@ function Skills() {
   return (
     <div className="w-full min-h-screen flex flex-col dark:bg-dark bg-light transition-all duration-300 justify-start items-center pb-16">
       <Navbar navText={"Skills"} />
-      <div className="skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center">
+      <div className="skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center slide-in-from-top">
         Passionate tech enthusiast, mastering programming and development
         frameworks. From crafting responsive web apps to exploring AI/ML
         algorithms, I thrive on expanding my skills. My hands-on experience
         ensures efficient and innovative solutions, driving success in every
         project :D
       </div>
-      <div className="skills dark:text-light text-dark transition-all duration-1000 flex flex-col gap-10 w-full my-4 px-5">
+      <div className="skills dark:text-light text-dark transition-all duration-1000 flex flex-col gap-10 w-full my-4 px-5 slide-in-from-bottom">
         <div className="skills_frontend text-xl md:text-2xl flex flex-col gap-4 items-center">
           <div className="frontend text-secondary">Frontend</div>
           <div className="frontend_icons flex gap-3 md:gap-5">

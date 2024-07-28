@@ -8,11 +8,9 @@ export default function Home() {
     <main className="w-full z-10 relative min-h-screen flex flex-col dark:bg-dark bg-light transition-all duration-300">
       <Navbar />
       <HeroSection />
-      <div className="w-full my-4 lg:hidden">
+      <div className="w-full lg:hidden">
         <SmNavbar />
       </div>
-      {/* <div className="flex-grow"></div>
-      <div className="w-full text-xs flex justify-center items-center text-dark dark:text-light py-4">Copyright &copy; 2024 Lohit M Kudlannavar</div> */}
     </main>
   );
 }
