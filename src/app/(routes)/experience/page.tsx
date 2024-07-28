@@ -23,7 +23,7 @@ const skillIcons: Record<Skill, JSX.Element> = {
 
 function Experience() {
   return (
-    <div className="w-full min-h-screen flex dark:bg-dark bg-light transition-all duration-300 flex-col items-center justify-center pb-16">
+    <div className="w-full min-h-screen flex dark:bg-dark bg-light transition-all duration-300 flex-col items-center justify-center pb-16 overflow-hidden">
       <Navbar navText={"Experience"} />
       <div className="skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center slide-in-from-top">
         I have gained hands-on experience in the technical field through my

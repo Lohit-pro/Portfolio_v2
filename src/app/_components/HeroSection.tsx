@@ -6,7 +6,7 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <div className="w-full my-2 flex flex-col md:flex-row justify-center items-center">
+    <div className="w-full my-2 flex flex-col md:flex-row justify-center items-center overflow-hidden">
       <img
         src="https://lohit-pro.vercel.app/pfp2.jpg"
         className="rounded-[50%] w-[30%] md:w-[20%] md:mx-[10%] border-2 border-secondary slide-in-from-left"
@@ -46,7 +46,7 @@ function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="w-full md:w-fit md:mr-16 md:py-5 md:px-4 md:gap-8 md:rounded-3xl mt-4 flex md:flex-col md:justify-end md:items-end justify-center text-secondary transition-all duration-1000 gap-6 slide-in-from-left md:slide-in-from-right delay-0">
+      <div className="w-full md:w-fit md:mr-16 md:py-5 md:px-4 md:gap-8 md:rounded-3xl mt-4 flex md:flex-col md:justify-end md:items-end justify-center text-secondary transition-all duration-1000 gap-6 slide-in-from-left md:slide-in-from-right">
         <Link
           className="md:hover:text-dark md:hover:dark:text-light"
           target="_blank"

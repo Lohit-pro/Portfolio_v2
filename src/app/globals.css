@@ -64,41 +64,29 @@
 }
 
 .slide-in-from-left {
-  animation: slideInFromLeft 0.5s ease-out forwards;
+  animation: slideInFromLeft 0.4s ease-out;
 }
 
 .slide-in-from-right {
-  animation: slideInFromRight 0.5s ease-out forwards;
+  animation: slideInFromRight 0.4s ease-out;
 }
 
 .slide-in-from-bottom {
-  animation: slideInFromBottom 0.5s ease-out forwards;
+  animation: slideInFromBottom 0.4s ease-out;
 }
 
 .slide-in-from-top {
-  animation: slideInFromTop 0.5s ease-out forwards;
+  animation: slideInFromTop 0.4s ease-out;
 }
 
 @media (min-width: 768px) {
   .md\:slide-in-from-right {
-    animation: slideInFromRight 0.5s ease-out forwards;
+    animation: slideInFromRight 0.7s ease-out;
   }
 
   .md\:slide-in-from-bottom {
-    animation: slideInFromBottom 0.5s ease-out forwards;
+    animation: slideInFromBottom 0.7s ease-out;
   }
-}
-
-.delay-0 {
-  animation-delay: 0s;
-}
-
-.delay-1 {
-  animation-delay: 1s;
-}
-
-.delay-2 {
-  animation-delay: 2s;
 }
 
 .nav-link {

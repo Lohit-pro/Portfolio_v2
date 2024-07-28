@@ -18,11 +18,11 @@ function Projects() {
         solutions for various challenges. Coding for fun keeps my skills sharp
         and my creativity flowing!
       </div>
-      <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl slide-in-from-bottom">
+      <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
         Here you go! Take a look 👀
       </div>
       <div className="flex flex-col w-full justify-center items-center">
-        <div className="w-[80%] my-5 md:my-10 md:gap-10 flex flex-col md:flex-row justify-evenly flex-wrap slide-in-from-bottom">
+        <div className="w-[80%] my-5 md:my-10 md:gap-10 flex flex-col md:flex-row justify-evenly flex-wrap">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
