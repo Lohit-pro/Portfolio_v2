@@ -9,6 +9,7 @@ import { SiFastapi, SiFlask, SiJavascript } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
 import Image from "next/image";
 import { experiences, Skill } from "../../_data/data";
+import Link from "next/link";
 
 const skillIcons: Record<Skill, JSX.Element> = {
   FaAngular: <FaAngular />,
@@ -66,7 +67,7 @@ function Experience() {
         ))}
       </div>
       <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2">
-        Hmm, Could your company name shine here? 🤔
+        Hmm, Could your company name shine here? 🤔&nbsp; <Link href="/contact" className="underline hover:text-blue-500">Refer me!</Link>
       </div>
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
