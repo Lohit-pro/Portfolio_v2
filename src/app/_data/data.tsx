@@ -72,7 +72,7 @@ export const projects = [
     description: "Contributing to the FakeStake project, an open-source Next.js application, where I developed a Minesweeper game as a key feature. Additionally, I played a significant role in designing and implementing the user interface, leveraging Next.js's capabilities to create a responsive and dynamic user experience. My work involved optimizing component interactions and ensuring seamless integration with the app's core functionalities.",
     videoUrl: "https://lohit-pro.vercel.app/projects/FakeStake.mp4",
     skills: ["SiNextdotjs", "RiTailwindCssFill", "SiJavascript"],
-    githubUrl: "https://github.com/Lohit-pro/Netflix-Clone",
+    githubUrl: "https://github.com/Lohit-pro/FakeStake",
     url: "https://fakestake.vercel.app/"
   },
   {

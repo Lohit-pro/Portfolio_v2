@@ -27,10 +27,11 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
+import Link from "next/link";
 
 function Skills() {
   return (
-    <div className="w-full min-h-screen flex flex-col dark:bg-dark bg-light transition-all duration-300 justify-start items-center pb-16">
+    <div className="w-full min-h-screen flex flex-col dark:bg-dark bg-light transition-all duration-300 justify-start items-center pb-16 overflow-y-hidden">
       <Navbar navText={"Skills"} />
       <div className="skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center slide-in-from-top">
         Passionate tech enthusiast, mastering programming and development
@@ -76,11 +77,13 @@ function Skills() {
           </div>
         </div>
       </div>
+      <div className="flex-grow"></div>
+      <div className="skills_text w-full flex justify-center items-center text-secondary mt-4">
+        This portfolio was built using &nbsp;<SiNextdotjs />
+      </div>
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
       </div>
-      {/* <div className="flex-grow"></div>
-      <div className="w-full text-xs flex justify-center items-center text-dark dark:text-light py-4">Copyright &copy; 2024 Lohit M Kudlannavar</div> */}
     </div>
   );
 }
