@@ -10,6 +10,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 import Image from "next/image";
 import { experiences, Skill } from "../../_data/data";
 import Link from "next/link";
+import useDelay from "@/app/_hooks/useDelay";
 
 const skillIcons: Record<Skill, JSX.Element> = {
   FaAngular: <FaAngular />,
@@ -33,11 +34,11 @@ function Experience() {
         Discord server moderation, showcasing my versatility. My diverse
         experiences reflect my ability to adapt and excel in various roles😃
       </div>
-      <div className="experiences flex my-2 md:mb-10 flex-col items-center w-full leading-snug">
+      <div className="experiences flex my-2 md:mb-10 flex-col items-center w-full leading-snug invisible">
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className={`experience border-[3px] border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${index % 2 === 0 ? "slide-in-from-left" : "slide-in-from-right"}`}
+            className={`experience border-[3px] border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${index % 2 === 0 ? useDelay("slide-in-from-left visible", index * 200) : useDelay("slide-in-from-right visible", index * 200)}`}
           >
             <span className="flex justify-between items-center">
               <div className="role text-secondary md:text-3xl leading-tight">
@@ -66,7 +67,7 @@ function Experience() {
           </div>
         ))}
       </div>
-      <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2">
+      <div className="skills_text w-full flex flex-col justify-center items-center text-secondary mb-2 my-2">
         Hmm, Could your company name shine here? 🤔&nbsp; <Link href="/contact" className="underline hover:text-blue-500">Refer me!</Link>
       </div>
       <div className="w-full my-4 lg:hidden">

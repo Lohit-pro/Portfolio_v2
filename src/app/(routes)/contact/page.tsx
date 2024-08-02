@@ -5,8 +5,16 @@ import emailjs from "@emailjs/browser";
 import LoadingBar from "react-top-loading-bar";
 import Navbar from "../../_components/Navbar";
 import SmNavbar from "../../_components/SmNavbar";
+import useDelay from "@/app/_hooks/useDelay";
 
 function Contact() {
+  const delay1 = useDelay("slide-in-from-top", 0);
+  const delay2 = useDelay("slide-in-from-left", 500);
+  const delay3 = useDelay("slide-in-from-right", 700);
+  const delay4 = useDelay("slide-in-from-left", 900);
+  const delay5 = useDelay("slide-in-from-right", 1100);
+  const delay6 = useDelay("slide-in-from-bottom", 1300);
+  
   const form = useRef<HTMLFormElement>(null);
   const [name, setName] = useState("");
   const [userEmail, setUserEmail] = useState("");
@@ -57,13 +65,13 @@ function Contact() {
         onSubmit={sendEmail}
         className="contact w-[80%] md:w-[40%] flex flex-col justify-center items-center text-dark dark:text-light transition-all duration-1000"
       >
-        <span className="text-xl text-center py-4 md:pt-14 slide-in-from-top">
+        <span className={`text-xl text-center py-4 md:pt-14 ${delay1 ? delay1 : "hidden"}`}>
           Want me in your team?{" "}
           <span className="text-secondary">Lets connect! 🤝</span>
         </span>
         <div className="flex flex-col md:flex-row md:justify-between w-full">
           <input
-            className="my-4 md:w-[55%] p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 slide-in-from-left"
+            className={`my-4 md:w-[55%] p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay2 ? delay2 : "invisible"}`}
             type="text"
             placeholder="Name"
             name="user_name"
@@ -72,7 +80,7 @@ function Contact() {
             required
           />
           <input
-            className="my-4 md:w-[40%] p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 slide-in-from-right"
+            className={`my-4 md:w-[40%] p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay3 ? delay3 : "invisible"}`}
             type="email"
             placeholder="Email"
             name="user_email"
@@ -82,7 +90,7 @@ function Contact() {
           />
         </div>
         <input
-          className="w-full my-4 p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 slide-in-from-left"
+          className={`w-full my-4 p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay4 ? delay4 : "invisible"}`}
           type="text"
           placeholder="Subject"
           name="subject"
@@ -91,7 +99,7 @@ function Contact() {
           required
         />
         <textarea
-          className="w-full my-4 p-2 pb-20 md:pb-28 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 slide-in-from-right"
+          className={`w-full my-4 p-2 pb-20 md:pb-28 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay5 ? delay5 : "invisible"}`}
           placeholder="Your Message goes here!"
           name="message"
           value={message}
@@ -99,7 +107,7 @@ function Contact() {
           required
         />
         <input
-          className="w-fit my-4 py-2 px-4 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none text-secondary hover:text-dark hover:dark:text-light border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 slide-in-from-bottom"
+          className={`w-fit my-4 py-2 px-4 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none text-secondary hover:text-dark hover:dark:text-light border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay6 ? delay6 : "invisible"}`}
           type="submit"
           value="Send it my way!"
           disabled={!name || !userEmail || !message}
