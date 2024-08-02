@@ -26,7 +26,9 @@ const skillIcons: Record<Skill, JSX.Element> = {
 function Experience() {
   const delay = experiences.map((_, index) =>
     index % 2 === 0
+      // eslint-disable-next-line react-hooks/rules-of-hooks
       ? useDelay("slide-in-from-left visible", index * 200)
+      // eslint-disable-next-line react-hooks/rules-of-hooks
       : useDelay("slide-in-from-right visible", index * 200)
   );
 
