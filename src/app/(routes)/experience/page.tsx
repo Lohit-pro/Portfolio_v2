@@ -24,6 +24,12 @@ const skillIcons: Record<Skill, JSX.Element> = {
 };
 
 function Experience() {
+  const delay = experiences.map((_, index) =>
+    index % 2 === 0
+      ? useDelay("slide-in-from-left visible", index * 200)
+      : useDelay("slide-in-from-right visible", index * 200)
+  );
+
   return (
     <div className="w-full min-h-screen flex dark:bg-dark bg-light transition-all duration-300 flex-col items-center justify-center pb-16 overflow-hidden">
       <Navbar navText={"Experience"} />
@@ -38,7 +44,7 @@ function Experience() {
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className={`experience border-[3px] border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${index % 2 === 0 ? useDelay("slide-in-from-left visible", index * 200) : useDelay("slide-in-from-right visible", index * 200)}`}
+            className={`experience border-[3px] border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${delay[index]}`}
           >
             <span className="flex justify-between items-center">
               <div className="role text-secondary md:text-3xl leading-tight">
@@ -58,7 +64,9 @@ function Experience() {
               />
               &nbsp;{experience.company}
             </div>
-            <div className="description text-xs dark:text-light text-dark transition-all duration-1000">{experience.description}</div>
+            <div className="description text-xs dark:text-light text-dark transition-all duration-1000">
+              {experience.description}
+            </div>
             <div className="skills w-full gap-2 mt-1 text-xl flex dark:text-light text-dark transition-all duration-1000">
               {experience.skills.map((skill, index) => (
                 <React.Fragment key={index}>{skillIcons[skill]}</React.Fragment>
@@ -68,7 +76,10 @@ function Experience() {
         ))}
       </div>
       <div className="skills_text w-full flex flex-col justify-center items-center text-secondary mb-2 my-2">
-        Hmm, Could your company name shine here? 🤔&nbsp; <Link href="/contact" className="underline hover:text-blue-500">Refer me!</Link>
+        Hmm, Could your company name shine here? 🤔&nbsp;{" "}
+        <Link href="/contact" className="underline hover:text-blue-500">
+          Refer me!
+        </Link>
       </div>
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
