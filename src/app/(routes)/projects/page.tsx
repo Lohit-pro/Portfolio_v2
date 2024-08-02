@@ -22,7 +22,7 @@ function Projects() {
         Here you go! Take a look 👀
       </div>
       <div className="flex flex-col w-full justify-center items-center">
-        <div className="w-[80%] my-5 md:my-10 md:gap-10 flex flex-col md:flex-row justify-evenly flex-wrap">
+        <div className="w-[80%] my-5 md:my-10 md:gap-10 flex flex-col md:flex-row justify-evenly flex-wrap slide-in-from-bottom">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
