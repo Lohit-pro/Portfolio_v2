@@ -66,7 +66,7 @@ function SmNavbar() {
       </Link>
       <Link
         className={`${
-          activeTab === "/experience" ? "text-primary" : ""
+          activeTab === "/experience" ? "text-secondary" : ""
         } text-xs flex flex-col justify-center items-center`}
         href="/experience"
       >

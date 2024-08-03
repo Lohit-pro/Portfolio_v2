@@ -27,11 +27,11 @@ function HeroSection() {
           expertise and problem-solving skills to drive success in an
           organization.
         </div>
-        <div className="w-full gap-4 mt-8 md:mt-16 flex justify-center text-start text-xl">
+        <div className="w-full md:gap-8 mt-8 md:my-8 flex justify-center text-start text-xl">
           <Link
             target="_blank"
             href="https://lohit-pro.vercel.app/Resume.pdf"
-            className="flex md:border-[3px] md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-4 text-secondary md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer"
+            className="flex md:border-[3px] hover:shadow-2xl shadow-secondary md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-4 text-secondary rounded-sm md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer"
           >
             <FileText />
             <div className="ml-1">Resume</div>
@@ -39,7 +39,7 @@ function HeroSection() {
           <Link
             target="_blank"
             href="https://github.com/Lohit-pro"
-            className="flex md:border-[3px] md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-4 text-secondary md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer"
+            className="flex md:border-[3px] hover:shadow-2xl shadow-secondary md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-4 text-secondary rounded-sm md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer"
           >
             <Github />
             <div className="ml-1">Github</div>

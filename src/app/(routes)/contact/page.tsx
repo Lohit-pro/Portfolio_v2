@@ -71,7 +71,7 @@ function Contact() {
         </span>
         <div className="flex flex-col md:flex-row md:justify-between w-full">
           <input
-            className={`my-4 md:w-[55%] p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay2 ? delay2 : "invisible"}`}
+            className={`my-4 md:w-[55%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay2 ? delay2 : "invisible"}`}
             type="text"
             placeholder="Name"
             name="user_name"
@@ -80,7 +80,7 @@ function Contact() {
             required
           />
           <input
-            className={`my-4 md:w-[40%] p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay3 ? delay3 : "invisible"}`}
+            className={`my-4 md:w-[40%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay3 ? delay3 : "invisible"}`}
             type="email"
             placeholder="Email"
             name="user_email"
@@ -90,7 +90,7 @@ function Contact() {
           />
         </div>
         <input
-          className={`w-full my-4 p-2 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay4 ? delay4 : "invisible"}`}
+          className={`w-full my-4 p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay4 ? delay4 : "invisible"}`}
           type="text"
           placeholder="Subject"
           name="subject"
@@ -99,7 +99,7 @@ function Contact() {
           required
         />
         <textarea
-          className={`w-full my-4 p-2 pb-20 md:pb-28 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay5 ? delay5 : "invisible"}`}
+          className={`w-full my-4 p-2 pb-20 md:pb-28 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay5 ? delay5 : "invisible"}`}
           placeholder="Your Message goes here!"
           name="message"
           value={message}
@@ -107,7 +107,7 @@ function Contact() {
           required
         />
         <input
-          className={`w-fit my-4 py-2 px-4 border-[3px] hover:shadow-xl shadow-secondary rounded-md outline-none text-secondary hover:text-dark hover:dark:text-light border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay6 ? delay6 : "invisible"}`}
+          className={`w-fit my-4 py-2 px-4 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none text-secondary hover:text-dark hover:dark:text-light border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay6 ? delay6 : "invisible"}`}
           type="submit"
           value="Send it my way!"
           disabled={!name || !userEmail || !message}
