@@ -46,7 +46,7 @@ function Experience() {
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className={`experience border-[3px] border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${delay[index]}`}
+            className={`experience border-[3px] hover:shadow-2xl shadow-secondary border-secondary p-2 rounded-lg w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${delay[index]}`}
           >
             <span className="flex justify-between items-center">
               <div className="role text-secondary md:text-3xl leading-tight">
@@ -77,7 +77,7 @@ function Experience() {
           </div>
         ))}
       </div>
-      <div className="skills_text w-full flex flex-col justify-center items-center text-secondary mb-2 my-2">
+      <div className="skills_text w-full flex flex-col md:flex-row justify-center items-center text-secondary mb-2 my-2">
         Hmm, Could your company name shine here? 🤔&nbsp;{" "}
         <Link href="/contact" className="underline hover:text-blue-500">
           Refer me!
