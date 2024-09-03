@@ -23,6 +23,10 @@ import {
   SiRedux,
   SiSolidity,
   SiTensorflow,
+  SiExpress,
+  SiSwagger,
+  SiPostgresql,
+  SiJsonwebtokens,
 } from "react-icons/si";
 
 const skillIcons: Record<string, JSX.Element> = {
@@ -43,6 +47,10 @@ const skillIcons: Record<string, JSX.Element> = {
   LuBinary: <LuBinary />,
   SiProteus: <SiProteus />,
   SiNextdotjs: <SiNextdotjs />,
+  SiExpress: <SiExpress />,
+  SiSwagger: <SiSwagger />,
+  SiPostgresql: <SiPostgresql />,
+  SiJsonwebtokens: <SiJsonwebtokens />,
 };
 
 type ProjectCardProps = {

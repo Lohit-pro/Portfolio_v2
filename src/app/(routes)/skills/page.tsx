@@ -16,6 +16,7 @@ import {
   FaReact,
 } from "react-icons/fa";
 import {
+  SiExpress,
   SiFastapi,
   SiFlask,
   SiJavascript,
@@ -48,6 +49,7 @@ function Skills() {
 
   const backendSkills = [
     { icon: <FaNode className="text-green-600" />, name: "Node.js" },
+    { icon: <SiExpress />, name: "Express" },
     { icon: <BiLogoSpringBoot className="text-green-700" />, name: "Spring Boot" },
     { icon: <SiFlask />, name: "Flask" },
     { icon: <SiFastapi className="text-[#227B77]" />, name: "FastAPI" },
