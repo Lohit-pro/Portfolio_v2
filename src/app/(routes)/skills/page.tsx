@@ -30,6 +30,7 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import useDelay from "@/app/_hooks/useDelay";
+import BuyMeACoffee from "@/app/_components/BuyMeACoffee";
 
 function Skills() {
   const delay1 = useDelay("slide-in-from-top", 0);
@@ -84,6 +85,7 @@ function Skills() {
       <div className={`skills_text w-full flex justify-center items-center text-secondary mt-4 ${delay3 ? delay3 : "hidden"}`}>
         This portfolio was built using &nbsp;<SiNextdotjs />
       </div>
+      <BuyMeACoffee />
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
       </div>

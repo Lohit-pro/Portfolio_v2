@@ -59,6 +59,7 @@ type ProjectCardProps = {
   videoUrl?: string;
   imageUrl?: string;
   skills: string[];
+  skillsName: string[];
   githubUrl: string;
   url?: string;
 };
@@ -69,6 +70,7 @@ function ProjectCard({
   videoUrl,
   imageUrl,
   skills,
+  skillsName,
   githubUrl,
   url,
 }: ProjectCardProps) {
@@ -83,7 +85,7 @@ function ProjectCard({
           Your browser does not support the video tag.
         </video>
       ) : imageUrl ? (
-        <img src={imageUrl} alt={name} className="w-[90%] rounded-lg" />
+        <img src={imageUrl} alt={`Screenshot of ${name}`} className="w-[90%] rounded-lg" />
       ) : null}
       <div className="project w-[90%] h-full flex flex-col justify-center items-start text-dark dark:text-light">
         <div className="project_name text-xl justify-start text-secondary transition-all duration-1000">
@@ -92,9 +94,14 @@ function ProjectCard({
         <div className="project_desc text-xs transition-all duration-1000">
           {description}
         </div>
-        <div className="project_skills w-full my-4 gap-2 mt-1 text-xl flex transition-all duration-1000">
+        <div className="project_skills w-full my-5 gap-2 mt-1 text-xl flex flex-wrap justify-start transition-all duration-1000">
           {skills.map((skill, index) => (
-            <span key={index}>{skillIcons[skill]}</span>
+            <div key={index} className="relative group flex items-center">
+              {skillIcons[skill]}
+              <span className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 text-xs text-dark dark:text-light opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {skillsName[index]}
+              </span>
+            </div>
           ))}
         </div>
         <div className="flex-grow"></div>
