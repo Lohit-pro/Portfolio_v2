@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ navText }) => {
         <span className="block md:hidden fixed-text">{navText ? navText : "Lohit M Kudlannavar"}</span>
         <span className="hidden md:block">Lohit M Kudlannavar</span>
       </Link>
-      <div className="right flex justify-end items-center gap-4">
+      <div className="right flex justify-end items-center gap-12">
         <div className="nav_items text-xl hidden lg:flex lg:gap-12 dark:text-light text-dark transition-all duration-300">
           <Link href="/" className={`nav-link ${activeTab === "/" ? "active" : ""}`} onClick={() => setActiveTab("/")}>Home</Link>
           <Link href="/skills" className={`nav-link ${activeTab === "/skills" ? "active" : ""}`} onClick={() => setActiveTab("/skills")}>Skills</Link>
@@ -30,7 +30,9 @@ const Navbar: React.FC<NavbarProps> = ({ navText }) => {
           <Link href="/experience" className={`nav-link ${activeTab === "/experience" ? "active" : ""}`} onClick={() => setActiveTab("/experience")}>Experience</Link>
           <Link href="/contact" className={`nav-link ${activeTab === "/contact" ? "active" : ""}`} onClick={() => setActiveTab("/contact")}>Contact</Link>
         </div>
-        <ThemeToggle />
+        <div className="flex items-center justify-center">
+          <ThemeToggle />
+        </div>
       </div>
     </div>
   );

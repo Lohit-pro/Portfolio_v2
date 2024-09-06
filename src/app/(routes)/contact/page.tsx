@@ -6,6 +6,7 @@ import LoadingBar from "react-top-loading-bar";
 import Navbar from "../../_components/Navbar";
 import SmNavbar from "../../_components/SmNavbar";
 import useDelay from "@/app/_hooks/useDelay";
+import BuyMeACoffee from "@/app/_components/BuyMeACoffee";
 
 function Contact() {
   const delay1 = useDelay("slide-in-from-top", 0);
@@ -122,6 +123,7 @@ function Contact() {
       <div className="skills_text w-full flex justify-center items-center text-dark dark:text-light mt-5 text-xs">
         Copyright &copy;2024 Lohit M Kudlannavar
       </div>
+      <BuyMeACoffee />
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
       </div>

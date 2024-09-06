@@ -5,6 +5,7 @@ import Navbar from "../../_components/Navbar";
 import SmNavbar from "../../_components/SmNavbar";
 import Link from "next/link";
 import ExperienceCard from "@/app/_components/ExperienceCard";
+import BuyMeACoffee from "@/app/_components/BuyMeACoffee";
 
 function Experience() {
   return (
@@ -24,6 +25,7 @@ function Experience() {
           Refer me!
         </Link>
       </div>
+      <BuyMeACoffee />
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
       </div>
