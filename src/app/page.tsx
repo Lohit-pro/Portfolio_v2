@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroSection from "./_components/HeroSection";
 import Navbar from "./_components/Navbar";
 import SmNavbar from "./_components/SmNavbar";
-import ThreeScene from "./_components/ThreeScene";
+// import ThreeScene from "./_components/ThreeScene";
 import BuyMeACoffee from "./_components/BuyMeACoffee";
 
 export default function Home() {
