@@ -8,7 +8,7 @@ const BuyMeACoffee = () => {
         <img
           src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
           alt="Buy Me A Coffee"
-          className="w-[130px] h-[40px]"
+          className="w-[105px] h-[30px] md:w-[130px] md:h-[40px]"
         />
       </a>
     </div>
