@@ -85,7 +85,11 @@ function ProjectCard({
           Your browser does not support the video tag.
         </video>
       ) : imageUrl ? (
-        <img src={imageUrl} alt={`Screenshot of ${name}`} className="w-[90%] rounded-lg" />
+        <img
+          src={imageUrl}
+          alt={`Screenshot of ${name}`}
+          className="w-[90%] rounded-lg"
+        />
       ) : null}
       <div className="project w-[90%] h-full flex flex-col justify-center items-start text-dark dark:text-light">
         <div className="project_name text-xl justify-start text-secondary transition-all duration-1000">
