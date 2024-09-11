@@ -70,22 +70,41 @@ function Skills() {
   return (
     <div className="w-full min-h-screen flex flex-col dark:bg-dark bg-light transition-all duration-300 justify-start items-center pb-16 overflow-y-hidden">
       <Navbar navText={"Skills"} />
-      <div className={`skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 md:text-xl md:leading-loose leading-snug text-center ${delay1 ? delay1 : "hidden"}`}>
-        Passionate tech enthusiast, mastering programming and development
-        frameworks. From crafting responsive web apps to exploring AI/ML
-        algorithms, I thrive on expanding my skills. My hands-on experience
-        ensures efficient and innovative solutions, driving success in every
-        project :D
+
+      <div className="w-full pt-[80px] flex flex-col items-center justify-center">
+        <div
+          className={`skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 text-sm md:text-xl md:leading-loose leading-snug text-center ${
+            delay1 ? delay1 : "hidden"
+          }`}
+        >
+          Passionate tech enthusiast, mastering programming and development
+          frameworks. From crafting responsive web apps to exploring AI/ML
+          algorithms, I thrive on expanding my skills. My hands-on experience
+          ensures efficient and innovative solutions, driving success in every
+          project :D
+        </div>
+
+        <div
+          className={`skills dark:text-light text-dark transition-all duration-1000 flex flex-col gap-10 w-full my-4 px-5 ${
+            delay2 ? delay2 : "invisible"
+          }`}
+        >
+          <SkillCard skills={frontendSkills} title="Frontend" />
+          <SkillCard skills={backendSkills} title="Backend" />
+          <SkillCard skills={toolsAndOtherSkills} title="Tools & Others" />
+        </div>
+
+        <div
+          className={`skills_text w-full flex justify-center items-center text-secondary mt-4 ${
+            delay3 ? delay3 : "invisible"
+          }`}
+        >
+          This portfolio was built using &nbsp;
+          <SiNextdotjs />
+        </div>
+        <BuyMeACoffee />
       </div>
-      <div className={`skills dark:text-light text-dark transition-all duration-1000 flex flex-col gap-10 w-full my-4 px-5 ${delay2 ? delay2 : "hidden"}`}>
-        <SkillCard skills={frontendSkills} title="Frontend" />
-        <SkillCard skills={backendSkills} title="Backend" />
-        <SkillCard skills={toolsAndOtherSkills} title="Tools & Others" />
-      </div>
-      <div className={`skills_text w-full flex justify-center items-center text-secondary mt-4 ${delay3 ? delay3 : "hidden"}`}>
-        This portfolio was built using &nbsp;<SiNextdotjs />
-      </div>
-      <BuyMeACoffee />
+
       <div className="w-full my-4 lg:hidden">
         <SmNavbar />
       </div>
