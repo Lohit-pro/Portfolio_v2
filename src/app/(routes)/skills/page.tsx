@@ -71,7 +71,7 @@ function Skills() {
     <div className="w-full min-h-screen flex flex-col dark:bg-dark bg-light transition-all duration-300 justify-start items-center pb-16 overflow-y-hidden">
       <Navbar navText={"Skills"} />
 
-      <div className="w-full pt-[80px] flex flex-col items-center justify-center">
+      <div className="w-full pt-[100px] flex flex-col items-center justify-center">
         <div
           className={`skills_text w-full dark:text-light text-dark transition-all duration-1000 md:w-[70%] px-5 mb-2 my-4 md:my-10 text-sm md:text-xl md:leading-loose leading-snug text-center ${
             delay1 ? delay1 : "hidden"
