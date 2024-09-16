@@ -62,7 +62,7 @@ function Contact() {
     <div className="w-full min-h-screen flex dark:bg-dark bg-light transition-all duration-300 flex-col items-center pb-16 overflow-hidden">
       <Navbar navText={"Contact"} />
 
-      <div className="w-full flex-grow md:pt-[2%] flex flex-col items-center justify-center">
+      <div className="w-full flex-grow pt-[100px] flex flex-col items-center justify-center">
         <form
           ref={form}
           onSubmit={sendEmail}
