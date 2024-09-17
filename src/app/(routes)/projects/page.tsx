@@ -5,7 +5,6 @@ import SmNavbar from "../../_components/SmNavbar";
 import Navbar from "../../_components/Navbar";
 import ProjectCard from "../../_components/ProjectCard";
 import { projects } from "../../_data/data";
-import BuyMeACoffee from "@/app/_components/BuyMeACoffee";
 
 function Projects() {
   return (
@@ -46,7 +45,6 @@ function Projects() {
         <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
           Hold on✋, I&apos;ll add few more soon
         </div>
-        <BuyMeACoffee />
 
         <div
           className="w-full my-4 lg:hidden"

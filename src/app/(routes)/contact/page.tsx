@@ -126,7 +126,7 @@ function Contact() {
               delay6 ? delay6 : "invisible"
             }`}
             type="submit"
-            value="Send it my way!"
+            value="Send it my way! 🚀"
             disabled={!name || !userEmail || !message}
           />
         </form>
@@ -136,10 +136,10 @@ function Contact() {
           progress={loadingProgress}
           onLoaderFinished={() => setLoadingProgress(0)}
         />
+        <BuyMeACoffee />
         <div className="skills_text w-full flex justify-center items-center text-dark dark:text-light mt-5 text-xs">
           Copyright &copy;2024 Lohit M Kudlannavar
         </div>
-        <BuyMeACoffee />
         <div className="w-full my-4 lg:hidden">
           <SmNavbar />
         </div>

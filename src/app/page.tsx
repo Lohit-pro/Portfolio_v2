@@ -3,7 +3,6 @@ import HeroSection from "./_components/HeroSection";
 import Navbar from "./_components/Navbar";
 import SmNavbar from "./_components/SmNavbar";
 // import ThreeScene from "./_components/ThreeScene";
-import BuyMeACoffee from "./_components/BuyMeACoffee";
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <Navbar />
       <div className="w-full flex-grow pt-[100px] pb-[100px]">
         <HeroSection />
-        <BuyMeACoffee />
         <div className="w-full lg:hidden">
           <SmNavbar />
         </div>
