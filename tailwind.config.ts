@@ -13,7 +13,7 @@ const config: Config = {
         "dark": "#0B0C10",
         "light": "#E1E2E3",
         "primary": "#66FCF1",
-        "secondary": "#227B77"
+        "secondary": "#FF6500"
       },
     },
   },
