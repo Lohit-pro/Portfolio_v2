@@ -131,8 +131,8 @@ function Contact() {
           />
         </form>
         <LoadingBar
-          color="#C73659"
-          height={3}
+          color="#F06449"
+          height={5}
           progress={loadingProgress}
           onLoaderFinished={() => setLoadingProgress(0)}
         />

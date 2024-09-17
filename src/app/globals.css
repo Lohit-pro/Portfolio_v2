@@ -7,16 +7,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0B0C10;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #227B77;
+  background-color: #F06449;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #227B77;
+  background-color: #F06449;
 }
 
 @keyframes slideInFromLeft {
@@ -105,7 +105,7 @@
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #227B77;
+  background-color: #F06449;
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
