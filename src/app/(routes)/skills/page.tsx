@@ -30,7 +30,6 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import useDelay from "@/app/_hooks/useDelay";
-import BuyMeACoffee from "@/app/_components/BuyMeACoffee";
 
 function Skills() {
   const delay1 = useDelay("slide-in-from-top", 0);
@@ -51,7 +50,10 @@ function Skills() {
   const backendSkills = [
     { icon: <FaNode className="text-green-600" />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express" },
-    { icon: <BiLogoSpringBoot className="text-green-700" />, name: "Spring Boot" },
+    {
+      icon: <BiLogoSpringBoot className="text-green-700" />,
+      name: "Spring Boot",
+    },
     { icon: <SiFlask />, name: "Flask" },
     { icon: <SiFastapi className="text-[#227B77]" />, name: "FastAPI" },
     { icon: <FaPython className="text-blue-400" />, name: "Python" },
@@ -102,7 +104,6 @@ function Skills() {
           This portfolio was built using &nbsp;
           <SiNextdotjs />
         </div>
-        <BuyMeACoffee />
       </div>
 
       <div className="w-full my-4 lg:hidden">
