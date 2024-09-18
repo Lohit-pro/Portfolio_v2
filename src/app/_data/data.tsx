@@ -13,18 +13,30 @@ export type Experience = {
   mode: string;
   company: string;
   logo: string;
+  duration: string;
   description: string;
   skills: Skill[];
 };
 
 export const experiences: Experience[] = [
   {
+    role: "Software Engineer - SD1",
+    mode: "Hybrid",
+    company: "Société Générale Global Solution Center (SGGSC)",
+    logo: "https://lohit-pro.vercel.app/skills/societe_generale.png",
+    duration: "Sep 2024 - Present",
+    description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maxime minima impedit velit, exercitationem libero ipsam quidem asperiores cupiditate!",
+    skills: [],
+  },
+  {
     role: "Software Engineer - Intern",
     mode: "Hybrid",
     company: "Société Générale",
     logo: "https://lohit-pro.vercel.app/skills/societe_generale.png",
+    duration: "Feb 2024 - Aug 2024",
     description:
-      "Currently, I am working on building and managing software meant for Financial Risk Management (FRM) in a European-based multinational corporation (MNC).",
+      "During my internship at Societe Generale (SocGen), I contributed by managing software in a global setting. I worked on company-standard Flask APIs, improved my Angular skills, learned industry-level Java standards, and tested Python code across different versions.",
     skills: ["FaAngular", "BiLogoSpringBoot", "SiFlask", "SiFastapi"],
   },
   {
@@ -32,6 +44,7 @@ export const experiences: Experience[] = [
     mode: "Remote",
     company: "Discord Server",
     logo: "https://lohit-pro.vercel.app/skills/discord.png",
+    duration: "May 2023 - Present",
     description:
       "A moderator in community filled with Car enthusiasts. My role is to resolve conflicts amongst the members, enforce the rules set by admin, assist users in the server and provide feedback. I really am happy being a Mod and manage the server.",
     skills: ["MdOutlineSecurity"],
@@ -41,6 +54,7 @@ export const experiences: Experience[] = [
     mode: "Remote",
     company: "Team Adverseflow",
     logo: "https://lohit-pro.vercel.app/skills/adverseflow.png",
+    duration: "Dec 2022 - Apr 2023",
     description:
       "A bit experienced as frontend web developer for five months. Developed the web pages like landing page, member area, redirect page, TOS page and others with the fellow developers in the team.",
     skills: ["FaHtml5", "FaCss3Alt", "SiJavascript"],
