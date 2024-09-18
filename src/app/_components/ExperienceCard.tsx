@@ -38,7 +38,7 @@ function ExperienceCard() {
         >
           <div className="md:group-hover:blur-[3px] transition-all duration-300">
             <span className="flex justify-between items-center">
-              <div className="role text-secondary md:text-3xl leading-tight">
+              <div className="role text-secondary md:text-2xl leading-tight">
                 {experience.role}
               </div>
               <div className="mode text-secondary text-xs md:text-xs">
