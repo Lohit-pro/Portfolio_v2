@@ -78,7 +78,7 @@ function Contact() {
           </span>
           <div className="flex flex-col md:flex-row md:justify-between w-full">
             <input
-              className={`my-4 md:w-[55%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+              className={`my-4 md:w-[55%] hover:md:w-[58%] focus:md:w-[58%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
                 delay2 ? delay2 : "invisible"
               }`}
               type="text"
@@ -89,7 +89,7 @@ function Contact() {
               required
             />
             <input
-              className={`my-4 md:w-[40%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+              className={`my-4 md:w-[40%] hover:md:w-[43%] focus:md:w-[43%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
                 delay3 ? delay3 : "invisible"
               }`}
               type="email"
