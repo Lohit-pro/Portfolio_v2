@@ -30,6 +30,7 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import useDelay from "@/app/_hooks/useDelay";
+import Link from "next/link";
 
 function Skills() {
   const delay1 = useDelay("slide-in-from-top", 0);
@@ -96,14 +97,16 @@ function Skills() {
           <SkillCard skills={toolsAndOtherSkills} title="Tools & Others" />
         </div>
 
-        <div
-          className={`skills_text w-full flex justify-center items-center text-secondary mt-4 ${
+        <Link
+          href="https://github.com/Lohit-pro/Portfolio_v2"
+          target="_blank"
+          className={`skills_text w-full flex justify-center items-center text-secondary mt-4 cursor-pointer ${
             delay3 ? delay3 : "invisible"
           }`}
         >
           This portfolio was built using &nbsp;
           <SiNextdotjs />
-        </div>
+        </Link>
       </div>
 
       <div className="w-full my-4 lg:hidden">

@@ -5,6 +5,8 @@ import SmNavbar from "../../_components/SmNavbar";
 import Navbar from "../../_components/Navbar";
 import ProjectCard from "../../_components/ProjectCard";
 import { projects } from "../../_data/data";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 function Projects() {
   return (
@@ -42,8 +44,20 @@ function Projects() {
           </div>
         </div>
 
-        <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
+        {/* <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
           Hold on✋, I&apos;ll add few more soon
+        </div> */}
+        <div className="skills_text w-[70%] flex flex-wrap justify-center items-center text-center text-secondary mb-2 my-2 md:text-xl">
+          Checkout my other contributions in&nbsp;
+          <Link
+            href="https://GitHub.com/Lohit-pro/"
+            target="_blank"
+            className="underline hover:text-blue-500"
+          >
+            Github
+          </Link>
+          &nbsp;
+          <FaGithub />
         </div>
 
         <div
