@@ -20,9 +20,17 @@ function HeroSection() {
         </span>
         <div>
           A passionate programmer with a strong interest in Web Development,
-          AI/ML, and more. Currently working as a full stack intern at Société
-          Générale and actively contributing to open-source projects on GitHub. I
-          thrive on the challenge of crafting innovative solutions and aspire to
+          AI/ML, and more. {" "}
+          <Link
+            href="https://www.societegenerale.com/en"
+            target="_blank"
+            className="text-secondary md:hover:underline"
+          >
+            Currently a full stack Software Engineer
+            at Société Générale
+          </Link>{" "}
+          and actively contributing to open-source projects on GitHub. I thrive
+          on the challenge of crafting innovative solutions and aspire to
           contribute my technical expertise and problem-solving skills to drive
           success in an organization.
         </div>
