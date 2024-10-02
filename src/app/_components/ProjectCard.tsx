@@ -28,6 +28,7 @@ import {
   SiPostgresql,
   SiJsonwebtokens,
 } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 
 const skillIcons: Record<string, JSX.Element> = {
   FaHtml5: <FaHtml5 />,
@@ -51,6 +52,7 @@ const skillIcons: Record<string, JSX.Element> = {
   SiSwagger: <SiSwagger />,
   SiPostgresql: <SiPostgresql />,
   SiJsonwebtokens: <SiJsonwebtokens />,
+  TbApi: <TbApi />,
 };
 
 type ProjectCardProps = {

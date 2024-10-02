@@ -19,13 +19,12 @@ function HeroSection() {
           Hey, I&apos;m Lohit
         </span>
         <div>
-          A fourth-year engineering student with a strong passion for
-          Programming, Web Development, AI/ML and more. Currently working as a
-          full stack intern at Société Générale and also actively contributing
-          to open-source projects in Github, I thrive on the challenge of
-          crafting innovative solutions and aspire to contribute my technical
-          expertise and problem-solving skills to drive success in an
-          organization.
+          A passionate programmer with a strong interest in Web Development,
+          AI/ML, and more. Currently working as a full stack intern at Société
+          Générale and actively contributing to open-source projects on GitHub. I
+          thrive on the challenge of crafting innovative solutions and aspire to
+          contribute my technical expertise and problem-solving skills to drive
+          success in an organization.
         </div>
         <div className="w-full md:gap-8 mt-8 md:my-8 flex justify-center text-start text-xl">
           <Link

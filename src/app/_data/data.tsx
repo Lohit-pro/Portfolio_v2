@@ -87,8 +87,8 @@ export const projects = [
     name: "1:1 Netflix Clone",
     description: "A 1:1 copy of your favourite video streaming platform. Netflix and chill. Built with love using JavaScript, React, Redux, Firebase.",
     imageUrl: "https://lohit-pro.vercel.app/projects/netflix.png",
-    skills: ["FaReact", "RiTailwindCssFill", "SiJavascript", "SiRedux", "IoLogoFirebase"],
-    skillsName: ["React", "Tailwind", "JavaScript", "Redux", "Firebase"],
+    skills: ["FaReact", "RiTailwindCssFill", "SiJavascript", "SiRedux", "IoLogoFirebase", "TbApi"],
+    skillsName: ["React", "Tailwind", "JavaScript", "Redux", "Firebase", "TMDB"],
     githubUrl: "https://github.com/Lohit-pro/Netflix-Clone",
     url: "https://netflix-clone-wine-beta.vercel.app/"
   },
@@ -114,6 +114,16 @@ export const projects = [
   },
   {
     id: 6,
+    name: "Weather Forecast App",
+    description: "Developed an interactive weather forecasting application providing current and upcoming weather details for cities across India. Built using Next.js for a modern, server-rendered user interface and integrated OpenWeatherMap API for reliable weather data. Utilized React Query for efficient data fetching and caching. Implemented user-friendly features like real-time search suggestions for cities and dynamic UI updates based on weather conditions.",
+    videoUrl: "https://lohit-pro.vercel.app/projects/weather_forecast_app.mp4",
+    skills: ["SiNextdotjs", "RiTailwindCssFill", "SiJavascript", "TbApi"],
+    skillsName: ["NextJs", "Tailwind", "JavaScript", "OpenWeatherMap",],
+    githubUrl: "https://github.com/Lohit-pro/Weather-Forecast-App",
+    url: "https://weather-forecast-lohit.vercel.app/"
+  },
+  {
+    id: 7,
     name: "Team Adverseflow",
     description: "A frontend web developer for five months. Developed the web pages like landing page, member area, redirect page, TOS page and others with the fellow developers in the team.",
     videoUrl: "https://lohit-pro.vercel.app/projects/adverseflow_project.mp4",
@@ -123,7 +133,7 @@ export const projects = [
     url: ""
   },
   {
-    id: 7,
+    id: 8,
     name: "Driving Affordance using Semantic segmentation",
     description: "Developed a ML model for driving and parking area detection using SegNet architecture, a type of convolutional neural network specifically designed for semantic segmentation, to accurately identify drivable and parkable areas in real-world images. Accuracy: 69.2% on a Cityscapes dataset.",
     videoUrl: "https://lohit-pro.vercel.app/projects/affordance_project.mp4",
@@ -133,7 +143,7 @@ export const projects = [
     url: ""
   },
   {
-    id: 8,
+    id: 9,
     name: "LiDAR based 3D object detection for autonomous driving",
     description: "Implemented LiDAR-based 3D object detection system for autonomous vehicles using YOLO v4 architecture and Velodyne HDL64 LiDAR(Light Detection and Ranging) sensor, achieving 67.1% accuracy for car detection, 68% accuracy for pedestrian detection, and 72.3% accuracy for cyclist detection.",
     videoUrl: "https://lohit-pro.vercel.app/projects/lidar_project.webm",
@@ -143,7 +153,7 @@ export const projects = [
     url: ""
   },
   {
-    id: 9,
+    id: 10,
     name: "American Signed Language detection",
     description: "Dive into the world of Computer Vision and Machine Learning. This application employs advanced techniques to interpret American Sign Language (ASL) through real-time hand sign recognition. Made custom dataset for each alphabet using openCV. Note that the video above is just for representation, my original video is missing out, will re-run the code and record the original output soon.",
     videoUrl: "https://lohit-pro.vercel.app/projects/asl_project.mp4",
@@ -153,7 +163,7 @@ export const projects = [
     url: ""
   },
   {
-    id: 10,
+    id: 11,
     name: "Street lights simulation using ARM LPC2148 uC",
     description: "Designed a demo model of street lights which work on the input from Analog to Digital signal Converter(ADC). Using a ARM LPC2148 board and an ADC sensor to take the input, We could switch ON the light when sun light intensity is low and vice versa.",
     videoUrl: "https://lohit-pro.vercel.app/projects/street_light_project.mp4",
@@ -163,7 +173,7 @@ export const projects = [
     url: ""
   },
   {
-    id: 11,
+    id: 12,
     name: "Learning Management System Clone",
     description: "To take a break from my ongoing exams, I decided to put my Tailwind CSS skills to the test by quickly cloning my university's Learning Management System's login page. The results are showcased in the above video :)",
     videoUrl: "https://lohit-pro.vercel.app/projects/lms_clone_project.mp4",
@@ -173,7 +183,7 @@ export const projects = [
     url: ""
   },
   {
-    id: 12,
+    id: 13,
     name: "Elevator simulation using Digital Circuits",
     description: "In the above proteus simulation, we had used Universal Shift Resistors (USRs) for lifting up the digital ON(1) logic and also to bring down the digital ON(1) logic. The digital ON denotes the elevator position in the building and the LEDs denote the floors of the building. We had designed it for 12 floors.",
     videoUrl: "https://lohit-pro.vercel.app/projects/elevator_project.mp4",
