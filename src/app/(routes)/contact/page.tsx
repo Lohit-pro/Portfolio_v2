@@ -1,19 +1,20 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import LoadingBar from "react-top-loading-bar";
 import Navbar from "../../_components/Navbar";
 import SmNavbar from "../../_components/SmNavbar";
 import useDelay from "@/app/_hooks/useDelay";
 import BuyMeACoffee from "@/app/_components/BuyMeACoffee";
+import Qr from "@/app/_components/Qr";
 
 function Contact() {
   const delay1 = useDelay("slide-in-from-top", 0);
   const delay2 = useDelay("slide-in-from-left", 500);
   const delay3 = useDelay("slide-in-from-right", 700);
   const delay4 = useDelay("slide-in-from-left", 900);
-  const delay5 = useDelay("slide-in-from-right", 1100);
+  const delay5 = useDelay("slide-in-from-bottom", 1100);
   const delay6 = useDelay("slide-in-from-bottom", 1300);
 
   const form = useRef<HTMLFormElement>(null);
@@ -22,6 +23,14 @@ function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [loadingProgress, setLoadingProgress] = useState(0);
+  const [theme, setTheme] = useState("dark");
+  const savedTheme = localStorage.getItem("theme");
+
+  useEffect(() => {
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, [savedTheme]);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,7 +52,7 @@ function Contact() {
             setUserEmail("");
             setSubject("");
             setMessage("");
-            alert("Message recieved! Will revert back to you soon :D");
+            alert("Message received! Will revert back to you soon :D");
           },
           (error) => {
             console.log(error.text);
@@ -63,73 +72,102 @@ function Contact() {
       <Navbar navText={"Contact"} />
 
       <div className="w-full flex-grow pt-[100px] flex flex-col items-center justify-center">
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="contact w-[80%] md:w-[40%] flex flex-col justify-center items-center text-dark dark:text-light transition-all duration-1000"
+        <span
+          className={`text-xl text-center py-4 md:pt-14 text-dark dark:text-light transition-all duration-1000 w-[80%] md:w-[40%] ${
+            delay1 ? delay1 : "hidden"
+          }`}
         >
-          <span
-            className={`text-xl text-center py-4 md:pt-14 ${
-              delay1 ? delay1 : "hidden"
-            }`}
-          >
-            Want me in your team?{" "}
-            <span className="text-secondary">Lets connect! 🤝</span>
-          </span>
-          <div className="flex flex-col md:flex-row md:justify-between w-full">
-            <input
-              className={`my-4 md:w-[55%] hover:md:w-[58%] focus:md:w-[58%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
-                delay2 ? delay2 : "invisible"
-              }`}
-              type="text"
-              placeholder="Name"
-              name="user_name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-            <input
-              className={`my-4 md:w-[40%] hover:md:w-[43%] focus:md:w-[43%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+          Want me in your team?{" "}
+          <span className="text-secondary">Let&apos;s connect! 🤝</span>
+        </span>
+
+        <div className="flex flex-col md:flex-row w-[80%] md:w-[80%] items-center justify-center gap-8 md:gap-16 mt-8 md:-mr-40">
+          <section className="w-full md:w-1/2 flex justify-center">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="contact w-full flex flex-col justify-center items-center text-dark dark:text-light transition-all duration-1000"
+            >
+              <div className="flex flex-col md:flex-row md:justify-between w-full">
+                <input
+                  className={`my-4 md:w-[55%] hover:md:w-[58%] focus:md:w-[58%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+                    delay2 ? delay2 : "invisible"
+                  }`}
+                  type="text"
+                  placeholder="Name"
+                  name="user_name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+                <input
+                  className={`my-4 md:w-[40%] hover:md:w-[43%] focus:md:w-[43%] p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+                    delay3 ? delay3 : "invisible"
+                  }`}
+                  type="email"
+                  placeholder="Email"
+                  name="user_email"
+                  value={userEmail}
+                  onChange={(e) => setUserEmail(e.target.value)}
+                  required
+                />
+              </div>
+              <input
+                className={`w-full my-4 p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+                  delay4 ? delay4 : "invisible"
+                }`}
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                required
+              />
+              <textarea
+                className={`w-full my-4 p-2 pb-20 md:pb-28 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+                  delay5 ? delay5 : "invisible"
+                }`}
+                placeholder="Your Message goes here!"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              />
+              <input
+                className={`w-fit my-4 py-2 px-4 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none text-secondary hover:text-dark hover:dark:text-light border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
+                  delay6 ? delay6 : "invisible"
+                }`}
+                type="submit"
+                value="Send it my way! 🚀"
+                disabled={!name || !userEmail || !message}
+              />
+            </form>
+          </section>
+
+          <section className="hidden md:flex md:flex-col items-center justify-center">
+            <div className="border-l-2 border-secondary h-20 mx-4 mb-2"></div>
+            <div
+              className={`dark:text-light text-dark font-extrabold transition-all duration-1000 ${
                 delay3 ? delay3 : "invisible"
               }`}
-              type="email"
-              placeholder="Email"
-              name="user_email"
-              value={userEmail}
-              onChange={(e) => setUserEmail(e.target.value)}
-              required
-            />
-          </div>
-          <input
-            className={`w-full my-4 p-2 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
-              delay4 ? delay4 : "invisible"
+            >
+              OR
+            </div>
+            <div className="border-l-2 border-secondary h-20 mx-4 mt-2"></div>
+          </section>
+
+          <section
+            className={`hidden md:block w-full md:w-1/2 flex-col justify-center items-center ${
+              delay3 ? delay3 : "invisible"
             }`}
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            required
-          />
-          <textarea
-            className={`w-full my-4 p-2 pb-20 md:pb-28 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
-              delay5 ? delay5 : "invisible"
-            }`}
-            placeholder="Your Message goes here!"
-            name="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-          <input
-            className={`w-fit my-4 py-2 px-4 border-[3px] hover:shadow-2xl shadow-secondary rounded-md outline-none text-secondary hover:text-dark hover:dark:text-light border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${
-              delay6 ? delay6 : "invisible"
-            }`}
-            type="submit"
-            value="Send it my way! 🚀"
-            disabled={!name || !userEmail || !message}
-          />
-        </form>
+          >
+            <div className="text-xl font-semibold dark:text-light text-dark -mt-16 pb-2 transition-all duration-1000">
+              Scan the QR to email me
+            </div>
+            <Qr theme={theme} />
+          </section>
+        </div>
+
         <LoadingBar
           color="#F06449"
           height={5}
