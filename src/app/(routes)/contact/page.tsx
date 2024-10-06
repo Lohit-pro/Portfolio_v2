@@ -81,7 +81,7 @@ function Contact() {
           <span className="text-secondary">Let&apos;s connect! 🤝</span>
         </span>
 
-        <div className="flex flex-col md:flex-row w-[80%] md:w-[80%] items-center justify-center gap-8 md:gap-16 mt-8 md:-mr-40">
+        <div className="flex flex-col md:flex-row w-[80%] md:w-[80%] items-center justify-center gap-8 md:gap-16 mt-8 md:-mr-60">
           <section className="w-full md:w-1/2 flex justify-center">
             <form
               ref={form}
