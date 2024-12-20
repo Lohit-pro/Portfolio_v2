@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="w-full relative min-h-screen flex flex-col dark:bg-dark bg-light transition-all duration-300">
       <Navbar />
-      <div className="w-full flex-grow pt-[100px] pb-[100px]">
+      <div className="w-full min-h-screen md:flex md:items-center flex-grow pt-[100px] pb-[100px]">
         <HeroSection />
         <div className="w-full lg:hidden">
           <SmNavbar />

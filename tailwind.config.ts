@@ -8,12 +8,19 @@ const config: Config = {
   ],
   darkMode: "class",
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       colors: {
-        "dark": "#0B0C10",
-        "light": "#FFFFFF",
-        "primary": "#66FCF1",
-        "secondary": "#F06449"
+        dark: "#0B0C10",
+        light: "#FFFFFF",
+        primary: "#66FCF1",
+        secondary: "#F06449",
       },
     },
   },

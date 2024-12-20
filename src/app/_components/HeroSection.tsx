@@ -16,7 +16,7 @@ function HeroSection() {
       />
       <div className="flex flex-col w-[90%] my-4 md:w-[60%] md:mt-10 md:text-xl md:pr-[15%] md:leading-loose leading-relaxed text-center md:text-start text-dark dark:text-light transition-all duration-1000 slide-in-from-right md:slide-in-from-bottom">
         <span className="text-secondary text-[3rem] md:text-[4rem] font-semibold">
-          Hey, I&apos;m Lohit
+          Hey, I&apos;m <span className="hover:text-black dark:hover:text-light transition-colors duration-300">Lohit.</span>
         </span>
         <div>
           A passionate programmer with a strong interest in Web Development,
@@ -34,11 +34,11 @@ function HeroSection() {
           contribute my technical expertise and problem-solving skills to drive
           success in an organization.
         </div>
-        <div className="w-full md:gap-8 mt-8 md:my-8 flex justify-center text-start text-xl">
+        <div className="w-full gap-2 md:gap-8 mt-8 md:my-8 flex justify-center text-start text-xl">
           <Link
             target="_blank"
             href="https://lohit-pro.vercel.app/Resume.pdf"
-            className="flex md:border-[3px] hover:shadow-2xl shadow-secondary md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-4 text-secondary rounded-sm md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer"
+            className="flex mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] hover:shadow-md shadow-secondary dark:shadow-light md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-secondary md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer transition-all duration-300"
           >
             <FileText />
             <div className="ml-1">Resume</div>
@@ -46,7 +46,7 @@ function HeroSection() {
           <Link
             target="_blank"
             href="https://github.com/Lohit-pro"
-            className="flex md:border-[3px] hover:shadow-2xl shadow-secondary md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-4 text-secondary rounded-sm md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer"
+            className="flex mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] hover:shadow-md shadow-secondary dark:shadow-light md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-secondary md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer transition-all duration-300"
           >
             <Github />
             <div className="ml-1">Github</div>
