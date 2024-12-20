@@ -79,7 +79,7 @@ function ProjectCard({
   return (
     <Link
       href={url || "#"}
-      className="w-full relative md:w-[30%] flex flex-col justify-between items-center my-4 py-4 transition-all duration-300 border-[3px] hover:shadow-2xl shadow-secondary border-secondary rounded-lg hover:border-dark hover:dark:border-light hover:cursor-pointer"
+      className="w-full dark:bg-[#252525] bg-[#fef1e4] relative md:w-[30%] flex flex-col justify-between items-center my-4 py-4 transition-all duration-300 border-[3px] hover:shadow-2xl shadow-secondary border-secondary rounded-3xl hover:border-dark hover:dark:border-light hover:cursor-pointer"
     >
       {videoUrl ? (
         <video className="projects_video w-[90%] rounded-lg" controls>
@@ -114,7 +114,7 @@ function ProjectCard({
         <Link
           target="_blank"
           href={githubUrl}
-          className="project_github-btn w-full border-[3px] gap-2 dark:bg-light hover:dark:bg-transparent dark:text-secondary bg-dark hover:bg-transparent text-secondary hover:bg-dark hover:text-secondary border-secondary hover:border-dark hover:dark:border-light py-2 flex items-center justify-center text-center transition-all duration-300 rounded-lg z-10"
+          className="project_github-btn w-full border-[3px] gap-2 dark:bg-light hover:dark:bg-transparent dark:text-secondary bg-dark hover:bg-transparent text-secondary hover:bg-dark hover:text-secondary border-secondary hover:border-dark hover:dark:border-light py-2 flex items-center justify-center text-center transition-all duration-300 rounded-2xl z-10"
           style={{ position: "relative", zIndex: 10 }}
           onClick={(e) => e.stopPropagation()}
         >
