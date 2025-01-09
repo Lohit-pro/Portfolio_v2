@@ -4,13 +4,14 @@ import React from "react";
 import useDelay from "@/app/_hooks/useDelay";
 import Image from "next/image";
 import { experiences, Skill } from "../_data/data";
-import { FaAngular, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaAngular, FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { SiFastapi, SiFlask, SiJavascript } from "react-icons/si";
+import { SiFastapi, SiFlask, SiJavascript, SiSwagger } from "react-icons/si";
 import { MdOutlineSecurity } from "react-icons/md";
 
 const skillIcons: Record<Skill, JSX.Element> = {
   FaAngular: <FaAngular />,
+  FaReact: <FaReact />,
   BiLogoSpringBoot: <BiLogoSpringBoot />,
   SiFastapi: <SiFastapi />,
   SiFlask: <SiFlask />,
@@ -18,6 +19,7 @@ const skillIcons: Record<Skill, JSX.Element> = {
   FaHtml5: <FaHtml5 />,
   FaCss3Alt: <FaCss3Alt />,
   MdOutlineSecurity: <MdOutlineSecurity />,
+  SiSwagger: <SiSwagger />,
 };
 
 function ExperienceCard() {

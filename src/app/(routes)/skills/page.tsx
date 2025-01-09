@@ -51,15 +51,15 @@ function Skills() {
   const backendSkills = [
     { icon: <FaNode className="text-green-600" />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express" },
+    { icon: <FaJava className="text-red-500" />, name: "Java" },
     {
       icon: <BiLogoSpringBoot className="text-green-700" />,
       name: "Spring Boot",
     },
+    { icon: <FaPython className="text-blue-400" />, name: "Python" },
     { icon: <SiFlask />, name: "Flask" },
     { icon: <SiFastapi className="text-[#227B77]" />, name: "FastAPI" },
-    { icon: <FaPython className="text-blue-400" />, name: "Python" },
-    { icon: <FaJava className="text-red-500" />, name: "Java" },
-    { icon: <TbBrandCpp className="text-blue-500" />, name: "C++" },
+    // { icon: <TbBrandCpp className="text-blue-500" />, name: "C++" },
     { icon: <SiPostgresql className="text-blue-900" />, name: "Postgres" },
   ];
 
