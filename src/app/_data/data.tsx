@@ -1,12 +1,14 @@
 export type Skill =
   | "FaAngular"
+  | "FaReact"
   | "BiLogoSpringBoot"
   | "SiFastapi"
   | "SiFlask"
   | "SiJavascript"
   | "FaHtml5"
   | "FaCss3Alt"
-  | "MdOutlineSecurity";
+  | "MdOutlineSecurity"
+  | "SiSwagger";
 
 export type Experience = {
   role: string;
@@ -36,8 +38,8 @@ export const experiences: Experience[] = [
     logo: "https://lohit-pro.vercel.app/skills/societe_generale.png",
     duration: "Feb 2024 - Aug 2024",
     description:
-      "During my internship at Societe Generale (SocGen), I contributed by managing software in a global setting. I worked on company-standard Flask APIs, improved my Angular skills, learned industry-level Java standards, and tested Python code across different versions.",
-    skills: ["FaAngular", "BiLogoSpringBoot", "SiFlask", "SiFastapi"],
+      "Worked on building and managing software designed for Financial Risk Management (FRM). Used React for dynamic front-end development, Java Spring Boot for robust backend services. Developed the company standard Python Flask starter template on which anyone within the organisation could start their flask project from scratch without worrying about the configurations. Understood the Oauth2 flow of the code, also integrated it using swagger 2.0 for authorisation and authentication.",
+    skills: ["FaReact", "BiLogoSpringBoot", "SiFlask", "SiSwagger"],
   },
   {
     role: "Community Moderator",
