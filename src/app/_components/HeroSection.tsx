@@ -8,7 +8,7 @@ function HeroSection() {
   return (
     <div className="w-full my-2 flex flex-col md:flex-row justify-center items-center overflow-hidden">
       <img
-        src="https://lohit-pro.vercel.app/pfp2.jpg"
+        src="https://avatars.githubusercontent.com/u/83768627?v=4"
         className="rounded-[50%] w-[30%] md:w-[20%] md:mx-[10%] border-2 border-secondary slide-in-from-left"
         alt="pfp"
         width={100}
