@@ -7,10 +7,8 @@ type Props = {
 export default function Qr({ theme }: Props) {
   return (
     <div className="w-72">
-      <img
-        src={theme === "dark" ? "/qr-code-d.svg" : "/qr-code-l.svg"}
-        alt="QR"
-      />
+      <img src="/qr-d.svg" alt="QR" className="hidden dark:block" />
+      <img src="/qr-l.svg" alt="QR" className="dark:hidden" />
     </div>
   );
 }

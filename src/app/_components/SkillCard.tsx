@@ -15,7 +15,7 @@ type SkillCardProps = {
 const SkillCard: React.FC<SkillCardProps> = ({ skills, title }) => {
   return (
     <div className="skills_section text-xl md:text-2xl flex flex-col gap-4 items-center">
-      <div className="section_title text-secondary">{title}</div>
+      <div className="section_title">{title}</div>
       <div className="skills_icons flex flex-wrap justify-center gap-3 md:gap-7">
         {skills.map((skill, index) => (
           <div key={index} className="relative flex flex-col items-center group">

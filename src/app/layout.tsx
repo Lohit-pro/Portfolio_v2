@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
+import { Permanent_Marker  } from "next/font/google";
 import "./globals.css";
+
+const font = Permanent_Marker ({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Lohit | Portfolio",
@@ -14,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }

@@ -24,7 +24,7 @@ function Experience() {
           <ExperienceCard />
         </div>
 
-        <div className="skills_text w-full flex flex-col md:flex-row justify-center items-center text-secondary mb-2 my-2 text-sm sm:text-base md:text-xl">
+        <div className="skills_text w-full flex flex-col md:flex-row justify-center items-center text-dark dark:text-light mb-2 my-2 text-sm transition-all duration-1000 sm:text-base md:text-xl">
           Hmm, Could your company name shine here? 🤔&nbsp;
           <Link href="/contact" className="underline hover:text-blue-500">
             Refer me!

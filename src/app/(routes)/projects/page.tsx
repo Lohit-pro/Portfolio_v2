@@ -22,7 +22,7 @@ function Projects() {
           innovative solutions for various challenges. Coding for fun keeps my
           skills sharp and my creativity flowing!
         </div>
-        <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
+        <div className="skills_text w-full flex justify-center items-center dark:text-light text-dark transition-all duration-1000 mb-2 my-2 md:text-xl">
           Here you go! Take a look 👀
         </div>
 
@@ -47,7 +47,7 @@ function Projects() {
         {/* <div className="skills_text w-full flex justify-center items-center text-secondary mb-2 my-2 md:text-xl">
           Hold on✋, I&apos;ll add few more soon
         </div> */}
-        <div className="skills_text w-[70%] flex flex-wrap justify-center items-center text-center text-secondary mb-2 my-2 md:text-xl">
+        <div className="skills_text w-[70%] flex flex-wrap justify-center items-center text-center text-dark dark:text-light transition-all duration-1000 mb-2 my-2 md:text-xl">
           Checkout my other contributions in&nbsp;
           <Link
             href="https://GitHub.com/Lohit-pro/"

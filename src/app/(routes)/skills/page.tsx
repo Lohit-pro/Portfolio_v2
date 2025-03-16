@@ -100,7 +100,7 @@ function Skills() {
         <Link
           href="https://github.com/Lohit-pro/Portfolio_v2"
           target="_blank"
-          className={`skills_text w-full flex justify-center items-center text-secondary mt-4 cursor-pointer ${
+          className={`skills_text w-full flex justify-center items-center dark:text-light text-dark transition-all duration-1000 mt-4 cursor-pointer ${
             delay3 ? delay3 : "invisible"
           }`}
         >

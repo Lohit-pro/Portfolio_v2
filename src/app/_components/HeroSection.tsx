@@ -8,15 +8,15 @@ function HeroSection() {
   return (
     <div className="w-full my-2 flex flex-col md:flex-row justify-center items-center overflow-hidden">
       <img
-        src="https://avatars.githubusercontent.com/u/83768627?v=4"
+        src="/PFPBW.jpg"
         className="rounded-[50%] w-[30%] md:w-[20%] md:mx-[10%] border-2 border-secondary slide-in-from-left"
         alt="pfp"
         width={100}
         height={100}
       />
       <div className="flex flex-col w-[90%] my-4 md:w-[60%] md:mt-10 md:text-xl md:pr-[15%] md:leading-loose leading-relaxed text-center md:text-start text-dark dark:text-light transition-all duration-1000 slide-in-from-right md:slide-in-from-bottom">
-        <span className="text-secondary text-[3rem] md:text-[4rem] font-semibold">
-          Hey, I&apos;m <span className="hover:text-black dark:hover:text-light transition-colors duration-300">Lohit.</span>
+        <span className="text-[3rem] md:text-[4rem] font-semibold drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+          Hey, I&apos;m Lohit.
         </span>
         <div>
           A passionate programmer with a strong interest in Web Development,
@@ -24,10 +24,9 @@ function HeroSection() {
           <Link
             href="https://www.societegenerale.com/en"
             target="_blank"
-            className="text-secondary md:hover:underline"
+            className="underline"
           >
-            Currently a full stack Software Engineer
-            at Société Générale
+            Currently a full stack Software Engineer at Société Générale
           </Link>{" "}
           and actively contributing to open-source projects on GitHub. I thrive
           on the challenge of crafting innovative solutions and aspire to
@@ -38,7 +37,7 @@ function HeroSection() {
           <Link
             target="_blank"
             href="https://lohit-pro.vercel.app/Resume.pdf"
-            className="flex mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] hover:shadow-md shadow-secondary dark:shadow-light md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-secondary md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer transition-all duration-300"
+            className="flex  mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] md:border-dark md:dark:border-light md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-dark dark:text-light md:dark:hover:text-light md:hover:cursor-pointer hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300"
           >
             <FileText />
             <div className="ml-1">Resume</div>
@@ -46,41 +45,41 @@ function HeroSection() {
           <Link
             target="_blank"
             href="https://github.com/Lohit-pro"
-            className="flex mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] hover:shadow-md shadow-secondary dark:shadow-light md:border-secondary md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-secondary md:hover:text-dark md:dark:hover:text-light md:hover:cursor-pointer transition-all duration-300"
+            className="flex mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] md:border-dark md:dark:border-light md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-dark dark:text-light md:dark:hover:text-light md:hover:cursor-pointer hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300"
           >
             <Github />
             <div className="ml-1">Github</div>
           </Link>
         </div>
       </div>
-      <div className="w-full md:w-fit md:mr-16 md:py-5 md:px-4 md:gap-8 md:rounded-3xl mt-4 flex md:flex-col md:justify-end md:items-end justify-center text-secondary transition-all duration-1000 gap-6 slide-in-from-left md:slide-in-from-right">
+      <div className="w-full md:w-fit md:mr-16 md:py-5 md:px-4 md:gap-8 md:rounded-3xl mt-4 flex md:flex-col md:justify-end md:items-end justify-center dark:text-light text-dark transition-all duration-1000 gap-6 slide-in-from-left md:slide-in-from-right">
         <Link
           className="md:hover:text-dark md:hover:dark:text-light"
           target="_blank"
           href="https://www.linkedin.com/in/lohit-kudlannavar-76b046250/"
         >
-          <Linkedin />
+          <Linkedin className="hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
         </Link>
         <Link
           className="md:hover:text-dark md:hover:dark:text-light"
           target="_blank"
           href="https://github.com/Lohit-pro"
         >
-          <Github />
+          <Github className="hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
         </Link>
         <Link
           className="md:hover:text-dark md:hover:dark:text-light"
           target="_blank"
           href="https://www.instagram.com/__lohit_mk___/"
         >
-          <Instagram />
+          <Instagram className="hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
         </Link>
         <Link
           className="md:hover:text-dark md:hover:dark:text-light"
           target="_blank"
           href="https://twitter.com/LohitKudlannav1"
         >
-          <Twitter />
+          <Twitter className="hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
         </Link>
       </div>
     </div>

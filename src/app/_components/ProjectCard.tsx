@@ -79,7 +79,7 @@ function ProjectCard({
   return (
     <Link
       href={url || "#"}
-      className="w-full dark:bg-[#252525] bg-[#fef1e4] relative md:w-[30%] flex flex-col justify-between items-center my-4 py-4 transition-all duration-300 border-[3px] hover:shadow-2xl shadow-secondary border-secondary rounded-3xl hover:border-dark hover:dark:border-light hover:cursor-pointer"
+      className="w-full dark:bg-[#252525] bg-[#fef1e4] relative md:w-[30%] flex flex-col justify-between items-center my-4 py-4 transition-all duration-300 border-[3px] rounded-3xl border-dark dark:border-light hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] hover:cursor-pointer"
     >
       {videoUrl ? (
         <video className="projects_video w-[90%] rounded-lg" controls>
@@ -94,10 +94,10 @@ function ProjectCard({
         />
       ) : null}
       <div className="project w-[90%] h-full flex flex-col justify-center items-start text-dark dark:text-light">
-        <div className="project_name text-xl justify-start text-secondary transition-all duration-1000">
+        <div className="project_name md:text-xl pt-1 justify-start transition-all duration-1000">
           {name}
         </div>
-        <div className="project_desc text-xs transition-all duration-1000">
+        <div className="project_desc text-xs md:text-sm pt-2 transition-all duration-1000">
           {description}
         </div>
         <div className="project_skills w-full my-5 gap-2 mt-1 text-xl flex flex-wrap justify-start transition-all duration-1000">
@@ -114,7 +114,7 @@ function ProjectCard({
         <Link
           target="_blank"
           href={githubUrl}
-          className="project_github-btn w-full border-[3px] gap-2 dark:bg-light hover:dark:bg-transparent dark:text-secondary bg-dark hover:bg-transparent text-secondary hover:bg-dark hover:text-secondary border-secondary hover:border-dark hover:dark:border-light py-2 flex items-center justify-center text-center transition-all duration-300 rounded-2xl z-10"
+          className="project_github-btn w-full border-[3px] gap-2 text-light dark:text-dark dark:bg-light hover:dark:bg-transparent bg-dark hover:bg-transparent hover:bg-dark border-secondary hover:border-dark hover:dark:border-light hover:text-dark hover:dark:text-light py-2 flex items-center justify-center text-center transition-all duration-300 rounded-2xl z-10"
           style={{ position: "relative", zIndex: 10 }}
           onClick={(e) => e.stopPropagation()}
         >

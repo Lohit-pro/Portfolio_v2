@@ -78,7 +78,7 @@ function Contact() {
           className={`text-xl text-center py-4 md:pt-14 text-dark dark:text-light transition-all duration-1000 w-[80%] md:w-[40%] ${delay1 ? delay1 : "hidden"}`}
         >
           Want me in your team?{" "}
-          <span className="text-secondary">Let&apos;s connect! 🤝</span>
+          <span className="text-dark dark:text-light transition-all duration-1000">Let&apos;s connect! 🤝</span>
         </span>
 
         <div className="flex flex-col md:flex-row w-[80%] md:w-[80%] items-center justify-center gap-8 md:gap-16 mt-8 md:-mr-60">
@@ -90,7 +90,7 @@ function Contact() {
             >
               <div className="flex flex-col md:flex-row md:justify-between w-full">
                 <input
-                  className={`my-4 md:w-[55%] hover:md:w-[58%] focus:md:w-[58%] p-2 pl-3 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay2 ? delay2 : "invisible"}`}
+                  className={`my-4 md:w-[55%] hover:md:w-[58%] focus:md:w-[58%] p-2 pl-3 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-dark dark:border-light focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay2 ? delay2 : "invisible"}`}
                   type="text"
                   placeholder="Name"
                   name="user_name"
@@ -99,7 +99,7 @@ function Contact() {
                   required
                 />
                 <input
-                  className={`my-4 md:w-[40%] hover:md:w-[43%] focus:md:w-[43%] p-2 pl-3 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay3 ? delay3 : "invisible"}`}
+                  className={`my-4 md:w-[40%] hover:md:w-[43%] focus:md:w-[43%] p-2 pl-3 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-dark dark:border-light focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay3 ? delay3 : "invisible"}`}
                   type="email"
                   placeholder="Email"
                   name="user_email"
@@ -109,7 +109,7 @@ function Contact() {
                 />
               </div>
               <input
-                className={`w-full my-4 p-2 pl-3 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay4 ? delay4 : "invisible"}`}
+                className={`w-full my-4 p-2 pl-3 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-dark dark:border-light focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay4 ? delay4 : "invisible"}`}
                 type="text"
                 placeholder="Subject"
                 name="subject"
@@ -118,7 +118,7 @@ function Contact() {
                 required
               />
               <textarea
-                className={`w-full my-4 p-2 pl-3 pb-20 md:pb-28 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay5 ? delay5 : "invisible"}`}
+                className={`w-full my-4 p-2 pl-3 pb-20 md:pb-28 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none border-dark dark:border-light focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay5 ? delay5 : "invisible"}`}
                 placeholder="Your Message goes here!"
                 name="message"
                 value={message}
@@ -126,7 +126,7 @@ function Contact() {
                 required
               />
               <input
-                className={`w-fit my-4 py-2 px-4 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none text-secondary hover:text-dark hover:dark:text-light border-secondary focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay6 ? delay6 : "invisible"}`}
+                className={`w-fit my-4 py-2 px-4 border-[3px] hover:shadow-2xl shadow-secondary rounded-3xl outline-none text-dark dark:text-light hover:text-dark hover:dark:text-light border-dark dark:border-light focus:dark:border-light focus:border-dark bg-transparent hover:dark:border-light hover:border-dark hover:cursor-pointer transition-all duration-300 ${delay6 ? delay6 : "invisible"}`}
                 type="submit"
                 value="Send it my way! 🚀"
                 disabled={!name || !userEmail || !message}
@@ -135,15 +135,15 @@ function Contact() {
           </section>
 
           <section className="hidden md:flex md:flex-col items-center justify-center">
-            <div className="border-l-2 border-secondary h-20 mx-4 mb-2"></div>
+            <div className="border-l-2 border-dark dark:border-light h-20 mx-8 mb-2"></div>
             <div className={`dark:text-light text-dark font-extrabold transition-all duration-1000 ${delay3 ? delay3 : "invisible"}`}>
               OR
             </div>
-            <div className="border-l-2 border-secondary h-20 mx-4 mt-2"></div>
+            <div className="border-l-2 border-dark dark:border-light h-20 mx-4 mt-2"></div>
           </section>
 
           <section className={`hidden md:block w-full md:w-1/2 flex-col justify-center items-center ${delay3 ? delay3 : "invisible"}`}>
-            <div className="text-xl font-semibold dark:text-light text-dark -mt-16 pb-2 transition-all duration-1000">
+            <div className="text-xl ml-5 font-light dark:text-light text-dark -mt-16 pb-2 transition-all duration-1000">
               Scan the QR to email me
             </div>
             <Qr theme={theme} />
