@@ -37,7 +37,7 @@ function HeroSection() {
           <Link
             target="_blank"
             href="https://lohit-pro.vercel.app/Resume.pdf"
-            className="flex  mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] md:border-dark md:dark:border-light md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-dark dark:text-light md:dark:hover:text-light md:hover:cursor-pointer hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300"
+            className="flex  mt-5 dark:bg-[#252525] bg-[#fee4fe] rounded-2xl md:border-[3px] md:border-dark md:dark:border-light md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-dark dark:text-light md:dark:hover:text-light md:hover:cursor-pointer hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300"
           >
             <FileText />
             <div className="ml-1">Resume</div>
@@ -45,7 +45,7 @@ function HeroSection() {
           <Link
             target="_blank"
             href="https://github.com/Lohit-pro"
-            className="flex mt-5 dark:bg-[#252525] bg-[#fef1e4] rounded-2xl md:border-[3px] md:border-dark md:dark:border-light md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-dark dark:text-light md:dark:hover:text-light md:hover:cursor-pointer hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300"
+            className="flex mt-5 dark:bg-[#252525] bg-[#fee4fe] rounded-2xl md:border-[3px] md:border-dark md:dark:border-light md:hover:dark:border-light md:hover:border-dark py-2 px-10 text-dark dark:text-light md:dark:hover:text-light md:hover:cursor-pointer hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all duration-300"
           >
             <Github />
             <div className="ml-1">Github</div>

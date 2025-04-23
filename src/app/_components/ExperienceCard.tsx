@@ -36,7 +36,7 @@ function ExperienceCard() {
       {experiences.map((experience, index) => (
         <div
           key={index}
-          className={`experience group relative dark:bg-[#252525] bg-[#fef1e4] border-[3px] hover:shadow-2xl shadow-secondary border-dark dark:border-light p-3 rounded-3xl w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${delay[index]}`}
+          className={`experience group relative dark:bg-[#252525] bg-[#fee4fe] border-[3px] hover:shadow-2xl shadow-secondary border-dark dark:border-light p-3 rounded-3xl w-[85%] md:w-[40%] my-4 flex flex-col md:hover:dark:border-light md:hover:border-dark transition-colors duration-300 ${delay[index]}`}
         >
           <div className="md:group-hover:blur-[5px] transition-all duration-300">
             <span className="flex justify-between items-center">
