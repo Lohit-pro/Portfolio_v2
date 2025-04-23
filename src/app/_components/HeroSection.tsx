@@ -9,7 +9,7 @@ function HeroSection() {
     <div className="w-full my-2 flex flex-col md:flex-row justify-center items-center overflow-hidden">
       <img
         src="/PFPBW.jpg"
-        className="rounded-[50%] w-[30%] md:w-[20%] md:mx-[10%] border-2 border-secondary slide-in-from-left"
+        className="rounded-[50%] w-[30%] md:w-[20%] md:mx-[10%] shadow-lg slide-in-from-left"
         alt="pfp"
         width={100}
         height={100}

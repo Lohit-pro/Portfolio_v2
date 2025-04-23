@@ -151,7 +151,7 @@ function Contact() {
         </div>
 
         <LoadingBar
-          color="#F06449"
+          color="#66FCF1"
           height={5}
           progress={loadingProgress}
           onLoaderFinished={() => setLoadingProgress(0)}

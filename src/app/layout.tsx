@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Permanent_Marker  } from "next/font/google";
+import { Zilla_Slab } from "next/font/google";
 import "./globals.css";
 
-const font = Permanent_Marker ({ subsets: ["latin"], weight: "400" });
+const font = Zilla_Slab({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Lohit | Portfolio",

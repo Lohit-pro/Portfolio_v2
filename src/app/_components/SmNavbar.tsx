@@ -22,13 +22,13 @@ function SmNavbar() {
     <nav className="w-full fixed border-2 border-t-[1px] border-b-0 border-r-0 border-l-0 border-dark dark:border-light bottom-0 left-0 bg-light dark:bg-dark flex justify-evenly py-2 dark:text-light text-dark transition-all duration-300">
       <Link
         className={`${
-          activeTab === "/" ? "text-primary" : ""
+          activeTab === "/" ? "text-secondary dark:text-primary" : ""
         } text-xs flex flex-col justify-center items-center`}
         href="/"
       >
         <House
           className={`${
-            activeTab === "/" ? "text-primary dark:text-primary" : ""
+            activeTab === "/" ? "text-secondary dark:text-primary" : ""
           } dark:text-light text-dark transition-all duration-300`}
           size={20}
         />
@@ -36,13 +36,13 @@ function SmNavbar() {
       </Link>
       <Link
         className={`${
-          activeTab === "/skills" ? "text-primary" : ""
+          activeTab === "/skills" ? "text-secondary dark:text-primary" : ""
         } text-xs flex flex-col justify-center items-center`}
         href="/skills"
       >
         <UserCog
           className={`${
-            activeTab === "/skills" ? "text-primary dark:text-primary" : ""
+            activeTab === "/skills" ? "text-secondary dark:text-primary" : ""
           } dark:text-light text-dark transition-all duration-300`}
           size={20}
         />
@@ -50,14 +50,14 @@ function SmNavbar() {
       </Link>
       <Link
         className={`${
-          activeTab === "/projects" ? "text-primary" : ""
+          activeTab === "/projects" ? "text-secondary dark:text-primary" : ""
         } text-xs flex flex-col justify-center items-center`}
         href="/projects"
       >
         <FolderGit
           className={`${
             activeTab === "/projects"
-              ? "text-primary dark:text-primary"
+              ? "text-secondary dark:text-primary"
               : ""
           } dark:text-light text-dark transition-all duration-300`}
           size={20}
@@ -66,14 +66,14 @@ function SmNavbar() {
       </Link>
       <Link
         className={`${
-          activeTab === "/experience" ? "text-primary" : ""
+          activeTab === "/experience" ? "text-secondary dark:text-primary" : ""
         } text-xs flex flex-col justify-center items-center`}
         href="/experience"
       >
         <Briefcase
           className={`${
             activeTab === "/experience"
-              ? "text-primary dark:text-primary"
+              ? "text-secondary dark:text-primary"
               : ""
           } dark:text-light text-dark transition-all duration-300`}
           size={20}
@@ -82,13 +82,13 @@ function SmNavbar() {
       </Link>
       <Link
         className={`${
-          activeTab === "/contact" ? "text-primary" : ""
+          activeTab === "/contact" ? "text-secondary dark:text-primary" : ""
         } text-xs flex flex-col justify-center items-center`}
         href="/contact"
       >
         <CircleUserRound
           className={`${
-            activeTab === "/contact" ? "text-primary dark:text-primary" : ""
+            activeTab === "/contact" ? "text-secondary dark:text-primary" : ""
           } dark:text-light text-dark transition-all duration-300`}
           size={20}
         />

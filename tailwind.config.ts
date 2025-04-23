@@ -17,10 +17,10 @@ const config: Config = {
     },
     extend: {
       colors: {
-        dark: "#0D021F",
-        light: "#FAFAFA",
-        primary: "#7A0BC0",
-        secondary: "#FAE3E3",
+        dark: "#0B0C10",
+        light: "#FFFFFF",
+        primary: "#66FCF1",
+        secondary: "#7A0BC0",
       },
     },
   },

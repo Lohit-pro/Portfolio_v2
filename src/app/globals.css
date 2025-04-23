@@ -11,12 +11,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #F06449;
+  background-color: #7A0BC0;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #F06449;
+  background-color: #7A0BC0;
 }
 
 @keyframes slideInFromLeft {
