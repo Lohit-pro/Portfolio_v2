@@ -16,7 +16,7 @@ function HeroSection() {
       />
       <div className="flex flex-col w-[90%] my-4 md:w-[60%] md:mt-10 md:text-xl md:pr-[15%] md:leading-loose leading-relaxed text-center md:text-start text-dark dark:text-light transition-all duration-1000 slide-in-from-right md:slide-in-from-bottom">
         <span className="text-[3rem] md:text-[4rem] font-semibold drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
-          Hey, I&apos;m Lohit.
+          Hey, I&apos;m <span className="lohit_name">Lohit.</span>
         </span>
         <div>
           A passionate programmer with a strong interest in Web Development,
